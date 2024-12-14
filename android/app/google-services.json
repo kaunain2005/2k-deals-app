@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627873485503",
+    "project_id": "kdealss",
+    "storage_bucket": "kdealss.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627873485503:android:7c28e441aa9fb0a442ec0a",
+        "android_client_info": {
+          "package_name": "com.example.deals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3jAPrgVJymLAdkHHUCl4QKjzx61dAXac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
