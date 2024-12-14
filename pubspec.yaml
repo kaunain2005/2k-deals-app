@@ -1,0 +1,84 @@
+name: deals
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies:
+  animated_bottom_navigation_bar: ^1.3.3
+  # animated_login: ^1.7.2
+  auto_size_text: ^3.0.0
+  circular_reveal_animation: ^2.0.1
+  cloud_firestore: ^4.15.8
+  firebase_auth: ^4.17.8
+  firebase_core: ^2.27.0
+  firebase_ml_model_downloader: ^0.2.4+16
+  firebase_storage: ^11.6.9
+  fluent_appbar: ^2.0.0
+  fluent_ui: ^4.8.7
+  flutter:
+    sdk: flutter
+  # google_ml_kit: ^0.18.1
+  # flutter_login_fix: ^4.2.0
+  flutter_login: ^5.0.0
+  font_awesome_flutter: ^10.7.0
+  google_mlkit_image_labeling: ^0.12.1
+  google_mlkit_object_detection: ^0.13.1
+  http: ^1.2.0
+  image_picker: ^1.0.8
+  infinite_scroll_pagination: ^4.0.0
+  path_provider: ^2.1.4
+  permission_handler: ^11.3.1
+  # rameez_animated_login_screen: ^0.0.6
+  share_plus: ^7.2.2
+  shared_preferences: ^2.2.3
+  smooth_page_indicator: ^1.2.0+3
+  speech_to_text: ^6.6.0
+  webview_all: ^0.4.3
+  webview_flutter: ^4.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png
+    - assets/images/logo6_rm.png
+    - assets/images/logo7rm.png
+    - assets/images/logo8.png
+    # Onbaording images
+    - assets/images/page1.png
+    - assets/images/page2.png
+    - assets/images/page3.png
+    - assets/images/page4.png
+    # - assets/sounds/drop.mp3
+    - assets/images/product.gif
+    - assets/images/product2.gif
+    - assets/images/money.gif
+    - assets/images/scroll.gif
+    - assets/images/Shopcart.gif
+    - assets/images/Shopcart2.gif
+    - assets/images/welcome.gif
+    - assets/images/discount.gif
+
+    - assets/products/product1.png
+    - assets/products/product2.png
+
+    - assets/icons/google.png
+    - assets/icons/facebook.png
+
+    - assets/images/bg1.png
+    # Shopping sites
+    - assets/icons/amazon.png
+    - assets/icons/flipkart.png
+    - assets/icons/meesho.png
+    - assets/icons/snapdeal.png
+    - assets/icons/myntra.png
+
+    #Product file
+    - assets/products.json
