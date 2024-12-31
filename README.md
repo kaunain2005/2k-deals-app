@@ -13,7 +13,7 @@ A Flutter-based application that brings you real-time deals and discounts from v
 - [Acknowledgments](#acknowledgments)
 
 
-##🚀 Features
+🚀 #Features
 
 - **Home Tab**: Browse all listed products with options for text and voice search.
 - **Like Tab**: Save and access your favorite products.
