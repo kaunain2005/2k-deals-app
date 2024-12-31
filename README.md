@@ -1,4 +1,3 @@
-```markdown
 # Real-Time Deals & Discounts App
 
 A Flutter-based application that brings you real-time deals and discounts from various e-commerce platforms. This app helps users discover and search products easily with multiple navigation features.
@@ -88,4 +87,3 @@ Contributions are welcome! Follow these steps:
 
 - Built with ❤️ using [Flutter](https://flutter.dev).
 - Inspired by the need to simplify deal-hunting across e-commerce platforms.
-```
