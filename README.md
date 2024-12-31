@@ -1,142 +1,84 @@
-# deals
-@m@zon@2005
-Your unique Associate ID is 2kdealsshop-21
-A new Flutter project.
+# Real-Time Deals & Discounts App
+
+A Flutter-based application that brings you real-time deals and discounts from various e-commerce platforms. This app helps users discover and search products easily with multiple navigation features.
 
 
-import 'package:image_picker/image_picker.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:path_provider/path_provider.dart';
-import 'dart:io';
-import 'package:deals/screens/product_detection_page.dart';
-  Future<void> _takePicture() async {
-    // Request permissions
-    await _requestPermissions();
-    // ProductDetectionPage();
+## 📂 Table of Contents
 
-    // final ImagePicker _picker = ImagePicker();
-    // // Take a picture and get the file
-    // final XFile? image = await _picker.pickImage(source: ImageSource.camera);
-
-    // // if (image != null) {
-    // //   // Save the image to gallery
-    // //   // await image.saveTo(image.path);
-    // //    // Save the image to gallery using gallery_saver
-    // // await GallerySaver.saveImage(image.path, albumName: 'YourAlbumName');
-    // //   // Show a message or perform any action after taking the picture
-    // //   ScaffoldMessenger.of(context).showSnackBar(
-    // //     SnackBar(content: Text('Image saved to gallery!')),
-    // //   );
-    // // }
-
-    // if (image != null) {
-    //   // Get the application's documents directory
-    //   Directory? appDocDir = await getExternalStorageDirectory(); // For Android
-    //   if (Platform.isIOS) {
-    //     appDocDir = await getApplicationDocumentsDirectory(); // For iOS
-    //   }
-
-    //   // Define a path to save the image in the gallery
-    //   String newPath = '${appDocDir?.path}/2Kdeals/Pictures';
-    //   print("New path for image storing : " + newPath + ".....");
-    //   Directory newDir = Directory(newPath);
-
-    //   if (!newDir.existsSync()) {
-    //     print("New directory creating.....");
-    //     newDir.createSync(
-    //         recursive: true); // Create directory if it doesn't exist
-    //   }
-
-    //   // Copy the image to the gallery path
-    //   File imageFile = File(image.path);
-    //   // print(imageFile);
-    //   String fileName = imageFile.uri.pathSegments.last;
-    //   print("File name : " + fileName+".....");
-    //   File savedImage = await imageFile.copy('${newDir.path}/$fileName');
-    //   print("Image saved......");
-
-    //   // Show success message
-    //   ScaffoldMessenger.of(context).showSnackBar(
-    //     SnackBar(content: Text('Image saved to ${savedImage.path}')),
-    //   );
-    // }
-  }
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
 
 
+##🚀 Features
 
-  <!-- flutter_login -->
-  import 'package:flutter/material.dart';
-import 'package:flutter_login/flutter_login.dart';
-import 'login_screen.dart';
+- **Home Tab**: Browse all listed products with options for text and voice search.
+- **Like Tab**: Save and access your favorite products.
+- **Camera Tab**: Upload or capture pictures to search for similar products.
+- **Sites Tab**: Explore various e-commerce sites within an in-app browser.
+- **Profile Tab**: Manage your user profile and app settings.
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
 
-  // Mock login function
-  Future<String?> _loginUser(LoginData data) async {
-    // Simulate a network call
-    await Future.delayed(const Duration(seconds: 1));
+🛠️ Installation
 
-    // Example logic for login
-    if (data.name == 'user' && data.password == 'password') {
-      return null; // Return null if login is successful
-    } else {
-      return 'Incorrect username or password'; // Return error message
-    }
-  }
+1. Clone the repository:
+   git clone https://github.com/kaunain2005/2k-deals-app.git
 
-  // Mock signup function
-  Future<String?> _signupUser(SignupData data) async {
-    // Simulate a network call
-    await Future.delayed(const Duration(seconds: 1));
+2. Navigate to the project directory:
+    cd your-repo-name
 
-    // Example logic for signup
-    // if (data.name.isEmpty || data.password.isEmpty || data.confirmPassword.isEmpty) {
-    //   return 'Please fill in all fields'; // Return error message if fields are empty
-    // }
-    
-    // if (data.password != data.confirmPassword) {
-    //   return 'Passwords do not match'; // Return error message if passwords do not match
-    // }
+3. Install dependencies:
+    flutter pub get
 
-    // You could add additional checks here (e.g., validating email format)
+4. Run the application:
+    flutter run
 
-    return null; // Return null if signup is successful
-  }
 
-  // Mock password recovery function
-  Future<String?> _recoverPassword(String name) async {
-    await Future.delayed(const Duration(seconds: 2));
-    return null; // Return null if recovery is successful
-  }
+📖 Usage
+Open the app and browse the Home Tab for products or search using the mic or text search.
+Save products you like in the Like Tab.
+Use the Camera Tab to search for products by uploading or clicking pictures.
+Visit your favorite e-commerce platforms via the Sites Tab.
+Manage your profile in the Profile Tab.
 
-  @override
-  Widget build(BuildContext context) {
-    return FlutterLogin(
-      title: 'ECORP',
-      logo: const AssetImage('assets/images/logo7rm.png'),
-      onLogin: _loginUser,
-      onSignup: _signupUser, // This now expects SignupData
-      onSubmitAnimationCompleted: () {
-        Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => LoginScreen(),
-        ));
-      },
-      onRecoverPassword: _recoverPassword,
-      messages: LoginMessages(
-        userHint: 'User',
-        passwordHint: 'Pass',
-        confirmPasswordHint: 'Confirm',
-        loginButton: 'LOG IN',
-        signupButton: 'REGISTER',
-        forgotPasswordButton: 'Forgot huh?',
-        recoverPasswordButton: 'HELP ME',
-        goBackButton: 'GO BACK',
-        confirmPasswordError: 'Not match!',
-        recoverPasswordDescription:
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
-        recoverPasswordSuccess: 'Password rescued successfully',
-      ),
-    );
-  }
-}
+
+📸 Screenshots
+
+![register valid](https://github.com/user-attachments/assets/ad0bbabb-6a61-4ca5-9bcf-77b71987c565)
+![recover email](https://github.com/user-attachments/assets/d0fd1d4b-79da-41a0-a4c2-3ef9a83d85ea)
+![login user not found](https://github.com/user-attachments/assets/a475580d-84a5-441e-93df-2bcf2d0068e5)
+![home page](https://github.com/user-attachments/assets/20cd9145-f631-49dc-aa72-92f889b4c8bb)
+![share product](https://github.com/user-attachments/assets/ddd97323-392a-4e49-bf29-b4998219f1c9)
+![wishlist2](https://github.com/user-attachments/assets/1a90d0a3-9c27-4ff7-a374-91af1b52d1e9)
+![product detection](https://github.com/user-attachments/assets/d9f2638f-6011-47b3-9d6d-0c4492620436)
+![product detection 2](https://github.com/user-attachments/assets/db543b66-4a62-4eaa-ade2-dd9e65f8eb25)
+![ecommerce](https://github.com/user-attachments/assets/72dfa2c9-1d63-4b5a-8949-2f2646848564)
+![profile 2](https://github.com/user-attachments/assets/d7be2d78-e0d9-48a5-8b4c-f3fd8d58d50a)
+
+
+🤝 Contributing
+Contributions are welcome! Follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch:
+git checkout -b feature-name
+
+3. Commit your changes:
+git commit -m "Add feature-name"
+
+4. Push to the branch:
+git push origin feature-name
+
+5. Open a pull request.
+
+🙌 Acknowledgments
+
+Built with ❤️ using Flutter.
+Inspired by the need to simplify deal-hunting across e-commerce platforms.
+---
+
+Let me know if you'd like to tweak any section further!
