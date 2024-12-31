@@ -13,7 +13,7 @@ A Flutter-based application that brings you real-time deals and discounts from v
 - [Acknowledgments](#acknowledgments)
 
 
-🚀 #Features
+## 🚀 Features
 
 - **Home Tab**: Browse all listed products with options for text and voice search.
 - **Like Tab**: Save and access your favorite products.
@@ -22,7 +22,7 @@ A Flutter-based application that brings you real-time deals and discounts from v
 - **Profile Tab**: Manage your user profile and app settings.
 
 
-🛠️ Installation
+🛠️ ## Installation
 
 1. Clone the repository:
    git clone https://github.com/kaunain2005/2k-deals-app.git
